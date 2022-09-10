@@ -8,6 +8,3 @@ turtle.done()
 
 
 
-
-#somethign
-
