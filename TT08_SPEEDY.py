@@ -11,12 +11,13 @@ for i in range(300,-300,-10):
     turtle.forward(600)
     
 #y-axis
+turtle.left(90)
 for i in range(300,-300,-10):
     turtle.penup()
-    turtle.left(90)
-    turtle.goto(i,-400)
+    turtle.goto(i-100,-290)
     turtle.pendown()
-    turtle.forward(600)
+    turtle.forward(590)
+
 
 
 
