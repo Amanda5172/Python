@@ -10,5 +10,13 @@ if n==0:
 elif n==1:
     b = random.expovariate(1)
 
+elif n==2:
+    r = [string.ascii_uppercase, string.ascii_lowercase]
+    s = random.randint(0,1)
+    if s = 0:
+        b = string.ascii_uppercase
+    b = r[s]
+
+
 print(data[n])
 print(b)
