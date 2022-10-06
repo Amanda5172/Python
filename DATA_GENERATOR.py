@@ -20,3 +20,29 @@ elif n==2:
 
 print(data[n])
 print(b)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+s = random.randint(0,1)
+if s == 0:
+    b = random.choice(string.ascii_uppercase)
+elif s == 1:
+    b=random.choice(string.ascii_lowercase)
+elif s==2:
+
+print(b)
+    
+    
