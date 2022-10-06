@@ -1,48 +1,36 @@
-import random, sys
+import random, sys, string
 
 data = ['integer', 'real','character','string','boolean','date']
-n = int(input("Input a number from 0 to 5: "))
 
 
-if n==0:
+def integer():
     b= random.randint(0,sys.maxsize)
 
-elif n==1:
+def real():
     b = random.expovariate(1)
 
-elif n==2:
-    r = [string.ascii_uppercase, string.ascii_lowercase]
-    s = random.randint(0,1)
-    if s = 0:
-        b = string.ascii_uppercase
-    b = r[s]
+def char():
+    return chr(random.randint(48,126))
 
 
-print(data[n])
-print(b)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-s = random.randint(0,1)
-if s == 0:
-    b = random.choice(string.ascii_uppercase)
-elif s == 1:
-    b=random.choice(string.ascii_lowercase)
-elif s==2:
-
-print(b)
     
-    
+print(data)
+u = int(input("Select a data type from the list(from 0 to 5): "))
+
+if u==0:
+    integer()
+elif u == 1:
+    real()
+elif u ==2:
+    character()
+elif u == 3:
+    string()
+elif u == 4:
+    boolean()
+else:
+    date()
+
+
+
+
+
