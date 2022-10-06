@@ -1,6 +1,6 @@
-my_char = str(input())
+c = str(input("character"))
 
-print(len(my_char)==10)
+print(len(c)==10)
 
 
 
