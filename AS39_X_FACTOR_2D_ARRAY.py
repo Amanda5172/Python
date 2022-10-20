@@ -1,24 +1,19 @@
-Use a 2d array to create a playlist system for 10 artists with 10 songs each. 
+#Use a 2d array to create a playlist system for 10 artists with 10 songs each. 
 
-Your algorithm will create a random order for the songs, 
-with the bands having a minimum distance of 2 songs. i.e. you can't play the same band again until 2 songs have passed. 
-(You do not have to play EVERY song in the system, just 20 is enough.)
-
-
+#Your algorithm will create a random order for the songs, 
+#with the bands having a minimum distance of 2 songs. i.e. you can't play the same band again until 2 songs have passed. 
+#(You do not have to play EVERY song in the system, just 20 is enough.)
 
 
 import random
-
 
 b = [["A1", 'A2', 'A3', 'A4', 'A5', 'A6', 'A7', 'A8', 'A9', 'A10']]
 
 m = 1
 for i in range(10):
-    b.append([m,m,m,m,m,m,m,m,m,m])
+    b.append(['S'+str(m),'S'+str(m),'S'+str(m),'S'+str(m),'S'+str(m),'S'+str(m),'S'+str(m),'S'+str(m),'S'+str(m),'S'+str(m)])
     m=m+1
 print(b)
-
-
 
 
 l = []
@@ -30,7 +25,15 @@ for j in range(20):
     
     if j<2:
         p.append(a)
-
+        
+    elif j<2:
+        x = j - 1
+        
+        while a == p[x]:
+            a = random.randint(1,5)
+            
+        p.append(a)
+        
     else:
         x = j - 1
         y = j - 2
