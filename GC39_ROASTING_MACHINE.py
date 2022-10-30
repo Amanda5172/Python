@@ -7,7 +7,7 @@ r2 = "All mistakes are fixable, yet you aren’t."
 
 r3 = "Are you at a loss for words, or did you exhaust your entire vocabulary?"
 
-r4 = "Honey, only thing bothering me is placed between your ears."
+r4 = "The only thing bothering me is placed between your ears."
 
 r5 = "Every time I have a stick in my hand, you look like a pinata."
 
