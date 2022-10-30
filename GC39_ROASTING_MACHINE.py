@@ -7,7 +7,6 @@ r2 = "All mistakes are fixable, yet you aren’t."
 
 r3 = "Are you at a loss for words, or did you exhaust your entire vocabulary?"
 
-
 r4 = "Honey, only thing bothering me is placed between your ears."
 
 r5 = "Every time I have a stick in my hand, you look like a pinata."
@@ -15,7 +14,6 @@ r5 = "Every time I have a stick in my hand, you look like a pinata."
 r6 = "You are like a software update. Every time I see you, I immediately think “not now”."
 
 r7 = "When I look at you, I think to myself where have you been my whole life? Can you go back there?"
-
 
 r8 = "I think you just need a high five… in the face… with a chair."
 
@@ -32,8 +30,6 @@ r13 = "You can’t imagine how much happiness you can bring… by leaving the ro
 r14 = "Everyone is allowed to act stupid once, but you are abusing that privilege."
 
 r15 = "Why are you rolling your eyes? Are you looking for your brain?"
-
-
 
 r16 = "Every time I think you can’t get any dumber, you prove me wrong."
 
@@ -52,7 +48,6 @@ r22 = "If I wanted to kill myself, I would simply jump from your ego to your IQ.
 r23 = "I can’t wait to spend my whole life without you."
 
 r24 = "Whoever told you to be yourself, gave you a bad advice."
-
 
 r25 = "Don’t worry about me. Worry about your eyebrows."
 
