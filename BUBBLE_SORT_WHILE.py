@@ -1,4 +1,4 @@
-mylist = [1,4,6,2]
+mylist = [10,4,6,2]
 
 j = 1
 
@@ -13,3 +13,5 @@ while j <len(mylist):
     j=j+1
      
 print(mylist)
+
+#Extension = len(mylist) - 1
