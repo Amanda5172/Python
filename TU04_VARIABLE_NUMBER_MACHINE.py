@@ -1,4 +1,4 @@
-TaylorSwiftBorn = 1989
-MyAge = int(input('When were you born?'))
-AgeDifference = MyAge - TaylorSwiftBorn
-print("Taylor Swift is",AgeDifference,"years older than you")
+MishaCollinsBorn = 1974
+MyAge = int(input('When were you born? '))
+AgeDifference = MyAge - MishaCollinsBorn
+print("Misha Collins is", AgeDifference, "years older than you")
