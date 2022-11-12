@@ -8,3 +8,8 @@ print(MyString[-1:-7:-1])#fedcba
 print(MyString[0:-2]) #abcd
 
 #Exercise 2
+s = "variable"
+print(s[3::2])
+print(s[::-2])
+print(s[:-9:-1])
+
