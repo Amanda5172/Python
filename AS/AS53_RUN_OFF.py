@@ -29,7 +29,6 @@ for v in range(len(ballot)):
     acount = ballot[vote1].count('Alice')#needed to use '' here instead of "" because the array input was with ''
     bcount = ballot[vote1].count('Bob')
     ccount = ballot[vote1].count('Charlie')
-    print(ccount, len(ballot[vote1])/2)
 
     counts = []
     counts.append(acount)
@@ -53,7 +52,6 @@ for v in range(len(ballot)):
         for i in range(len(counts)):
             if counts[i] == min(counts):
                 elim.append(i)
-        print(elim)
         if 0 in elim :
             #print("Alice is eliminated")
             running.remove("Alice")
