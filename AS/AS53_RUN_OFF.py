@@ -21,6 +21,8 @@ ballot.append(choice1)
 ballot.append(choice2)
 ballot.append(choice3)
 
+print("")
+
 #runoff code
 vote1 = 0
 
