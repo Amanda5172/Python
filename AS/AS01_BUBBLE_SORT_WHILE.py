@@ -1,4 +1,10 @@
-mylist = [10,4,6,2]
+import random
+
+mylist = []
+
+for t in range(1,9):
+    z = random.randint(1,30)
+    mylist.append(z)
 
 j = 1
 
