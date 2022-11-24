@@ -4,8 +4,6 @@ a = input("Confess or stay silent(c/s): ")
 b = random.randint(0,1)
 #0 is c, 1 is s
 
-
-
 if a=='c' and b==0:
     print("Both chose to confess. 5 years in jail for both.")
 elif a=='c' and b==1:
