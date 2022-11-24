@@ -20,4 +20,7 @@ if cif > cmam:
     print("The word 'if' appears more in 'if' than 'ma'am'")
 elif cif < cmam:
     print("The word 'if' appears more in 'ma'am' than 'if'")
+elif cif=cmam:
+    print("The word 'if' appears the same amount or times in 'ma'am' than 'if'")
+
 
