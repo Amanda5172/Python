@@ -4,7 +4,7 @@ y=0
 wc=0
 #wc is word count
 
-with open("helloworld.txt", "r") as ef:
+with open("file.txt", "r") as ef:
     for line in ef:
         s = line.translate(str.maketrans('','',string.punctuation))
         x=s.split()
