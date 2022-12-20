@@ -21,6 +21,24 @@ t.lt(3645)
 #rotates left, faces north east
 
 #Exercise 5
+xs = [12, 10, 32, 3, 66, 17, 42, 99, 20]
 
+#a
+for i in xs:
+    print(i)
+#b
+for u in xs:
+    print(u)
+    print(u**2)
+#c
+total=0
+for k in xs:
+    total=total+k
+print(total)
+#d
+product=1
+for k in xs:
+    product=product*k
+print(product)
 
-
+#Exercise 6
