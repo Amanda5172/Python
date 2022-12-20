@@ -42,3 +42,35 @@ for k in xs:
 print(product)
 
 #Exercise 6
+import turtle
+t=turtle.Turtle()
+
+def sh(s):
+    for i in range(s):
+        t.fd(50)
+        t.lt(360/s)
+
+
+t.pu()
+t.goto(-200,0)
+t.pd()
+
+sh(3)
+
+t.pu()
+t.goto(-130,0)
+t.pd()
+
+sh(4)
+
+t.pu()
+t.goto(-30,0)
+t.pd()
+
+sh(6)
+
+t.pu()
+t.goto(100,0)
+t.pd()
+
+sh(8)
