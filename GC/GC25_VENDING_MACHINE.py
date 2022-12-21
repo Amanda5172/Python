@@ -1,5 +1,5 @@
 vm=["water","soft drink","chocolate bar", "sandwich","ice cream"]
-vp=[3,5.15,4.50,6,8.75]
+vp=["3.00","5.15","4.50","6.00","8.75"]
 
 for i in range(len(vm)):
     print(f"{i} {vm[i]:<15} {vp[i]}")
@@ -11,21 +11,32 @@ ch=-1
 
 m=float(input("Money: "))
 
-ch=m-vp[c]
+ch=m-float(vp[c])
 
 d=round(ch,2)
-if len(str(d))!=4:
+t=str(d).find('.')
+r=str(m).find('.')
+
+if len(str(d)[t+1::])<2:
     d=str(d)+'0'
+if len(str(m)[r+1::])<2:
+    m=str(m)+'0'
+
 
 while ch<0:
     print("Insufficient money.")
     m=m+float(input("Money: "))
 
-    ch=m-vp[c]
+    ch=m-float(vp[c])
 
     d=round(ch,2)
-    if len(str(d))!=4:
+    t=str(d).find('.')
+    r=str(m).find('.')
+    
+    if len(str(d)[t::])<2:
         d=str(d)+'0'
+    if len(str(m)[r::])<2:
+        m=str(m)+'0'
 
 print()
 print("Total money received:",m)
