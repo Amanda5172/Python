@@ -4,7 +4,6 @@ vp=["3.00","5.15","4.50","6.00","8.75"]
 for i in range(len(vm)):
     print(f"{i} {vm[i]:<15} {vp[i]}")
 
-
 c=int(input("Number of the item you wish to purchase: "))
 
 ch=-1
