@@ -1,7 +1,7 @@
-#not done
 import random
 
 r = random.randint(1,111)
+print(r)
 
 l=[]
 
@@ -17,16 +17,14 @@ def bs(listname,top,bottom,find):
             bottom = middle + 1
         else:
             top = middle - 1
+        
     return False
 
-def sort(listname):
-    pass
-    #idk what sort
-
-if bs(l,0,100,r) == False:
-    sort(l)
-    if bs(l,0,100,r)==False:
+if bs(l,100,0,r) == False:
+    l.sort()
+    if bs(l,100,0,r)==False:
         print("item not in")
-
-
-
+    else:
+        print("found")
+else:
+    print("found")
