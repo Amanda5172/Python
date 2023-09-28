@@ -21,3 +21,18 @@ while j <len(mylist):
 print(mylist)
 
 #Extension = len(mylist) - 1
+def bubblesortasc(mylist):
+    ub = len(mylist)
+    swap=True
+
+    while swap==True and ub!=0:
+        swap=False
+        for i in range(0,ub-1):
+            if mylist[i] > mylist[i+1]:
+                t= mylist[i]
+                mylist[i]= mylist[i+1]
+                mylist[i+1] = t
+                swap=True
+        ub = ub-1
+
+    return mylist
