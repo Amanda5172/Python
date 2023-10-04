@@ -38,5 +38,3 @@ for w in range(3):
     r=bottom()
     k.remove(r)
     print(w,r)
-
-
