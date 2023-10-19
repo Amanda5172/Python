@@ -33,9 +33,19 @@ def bubblesort(mylist, order):
     return ans
 
 def quicksort(mylist,order):
-    
-    return [[1,2],[3,4]]
-
+    if len(mylist) <= 1:
+        return mylist
+    else:
+        if order=="ascending":
+            pivot = mylist[0]
+            left = [x for x in mylist[1:] if x < pivot]
+            right = [x for x in mylist[1:] if x >= pivot]
+            return quicksort(left, order) + [pivot] + quicksort(right, order)
+        else:
+            pivot = mylist[0]
+            left = [x for x in mylist[1:] if x >= pivot]
+            right = [x for x in mylist[1:] if x < pivot]
+            return quicksort(left, order) + [pivot] + quicksort(right, order)
 
 def randomlist(n, data):
     r=[]
@@ -73,7 +83,7 @@ def question():
             ans1 = quicksort(mylist,'ascending')
             ans2 = quicksort(mylist,'descending')
         
-    print(mylist)
+    print(list(mylist))
     print()
     sol=input("Check the solutions? ")
     print("(a)")
@@ -85,16 +95,9 @@ def question():
 def ansprint(ans):
     for i in range(len(ans)):
         print(ans[i])
-
-
 def main():
     question()
 
 if __name__ == "__main__":
     main()
-
-
-
-
-
 
