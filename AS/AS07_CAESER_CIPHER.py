@@ -13,7 +13,10 @@ for i in text:
         mess=mess+i
     else:
         index=alphabet.rfind(i)
-        mess = mess+alphabet[index+ciph]
+        p=index+ciph
+        if p>26:
+            p=p-26
+        mess = mess+alphabet[p]
     
 
 print(mess)
