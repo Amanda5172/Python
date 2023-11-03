@@ -35,7 +35,7 @@ for i in range(0,len(text),4):
     team.append(u)
 
 
-i = random.randint(1,28)
+i = random.randint(0,27)
 print(team[i].getplayerinfo())
 team[i].changecommunityinvolvement(2)
 team[i].changeinjured(True)
