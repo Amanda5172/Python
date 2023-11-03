@@ -28,7 +28,6 @@ with open("CutestCats.txt","r") as ef:
             text.append(line.strip("\n"))
 
 
-
 cats=[]
 for i in range(0,len(text),7):
     u=cat()
@@ -36,6 +35,30 @@ for i in range(0,len(text),7):
     cats.append(u)
 
 
-i = random.randint(0,4)
-print(cats[i].getcatdetails())
-print(cats[i].getcatlife())
+def sort(cats):
+    
+    live=[]
+    for i in range(len(cats)):
+        t = cats[i].getcatlife()
+        live.append(t)
+
+    ub=len(live)
+    swap=True
+    while swap==True and ub!=0:
+        swap=False
+        for k in range(0,ub-1):
+            if int(live[k][1][17:19])> int(live[k+1][1][17:19]):
+                temp=live[k]
+                live[k]=live[k+1]
+                live[k+1]=temp
+                swap=True
+            elif int(live[k][1][17:19])== int(live[k+1][1][17:19]) and int(live[k][1][23:25])>int(live[k+1][1][23:25]):
+                temp=live[k]
+                live[k]=live[k+1]
+                live[k+1]=temp
+                swap=True
+        ub=ub-1
+                                            
+    return live
+        
+print(sort(cats))
