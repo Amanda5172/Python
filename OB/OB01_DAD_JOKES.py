@@ -25,7 +25,7 @@ for i in range(0,len(text),2):
     jokes.append(u)
 
 
-i = random.randint(1,10)
+i = random.randint(0,9)
 print(jokes[i].getprompt())
 userans=input()
 print(jokes[i].getanswer())
