@@ -7,8 +7,7 @@ def pseudo(line):
     line = re.split(r'(\s+)', line)
     for key, value in changelist.items():
         for word in line:
-            if key == str(word):
-                line[line.index(word)] = value
+            line[line.index(word)] = word.replace(key, value)
       
     f = "".join(line)
     return f
