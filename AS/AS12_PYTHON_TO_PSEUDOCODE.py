@@ -9,9 +9,6 @@ def pseudo(line):
         for word in line:
             if key == str(word):
                 line[line.index(word)] = value
-        #for key, value in advanced_conversion_rules.items():
-            #for word in line:
-           #     line[line.index(word)] = word.replace(key, value)
       
     f = "".join(line)
     return f
