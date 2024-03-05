@@ -1,4 +1,6 @@
 from matplotlib.pyplot import ylabel, plot, show, xlabel, title
+import math
+
 #constant
 x = [2, 4, 6, 8, 10, 12]
 y = [2, 2, 2, 2, 2, 2]
